@@ -1,0 +1,1 @@
+find = lambda a,x: -1 if a == [] or (len(a) == 1 and a[0]!=x) else round(len(a)/2) if a[round(len(a)/2)] == x else find(a[0:(round(len(a)/2))],x) if a[round(len(a)/2)] > x else -1 if find(a[(round(len(a)/2)+1):(len(a))],x) == -1 else round(len(a)/2)+find(a[(round(len(a)/2)+1):(len(a))],x)+1
